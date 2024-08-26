@@ -4,13 +4,8 @@ import Link from "next/link";
 import { Button, Title } from "@mantine/core";
 import styles from "@/styles/Main.module.css";
 import { Landing } from "@/components/Landing";
-import { BeansProducts } from "@/store/products.component";
-import { IconArrowRight } from "@tabler/icons-react";
-import { useProductsContext } from "@/context/product";
 
 export default function Home() {
-  const [products, _] = useProductsContext();
-
   return (
     <>
       <Head>

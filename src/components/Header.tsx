@@ -18,7 +18,6 @@ import {
 import { useDisclosure } from "@mantine/hooks";
 import { MantineLogo } from "@mantine/ds";
 import { IconSun, IconMoonStars } from "@tabler/icons-react";
-import { useCartContext } from "@/context/cart";
 import { getTotalQuantity } from "@/helpers/general";
 
 const HEADER_HEIGHT = rem(60);
@@ -119,8 +118,6 @@ export function BeanHeader({ links }: HeaderResponsiveProps) {
   const [active, setActive] = useState(links[0].link);
   const { classes, cx } = useStyles();
   const router = useRouter();
-
-  const [cart, setCart] = useCartContext();
 
   const { colorScheme, toggleColorScheme } = useMantineColorScheme();
   const theme = useMantineTheme();

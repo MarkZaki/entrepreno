@@ -11,12 +11,8 @@ import { Notifications } from "@mantine/notifications";
 import { BeanHeader } from "@/components/Header";
 import { Routes } from "@/routes";
 
-import { CartProvider } from "@/context/cart";
 import { Client, HydrationProvider } from "react-hydration-provider";
 import { BeanFooter } from "@/components/Footer";
-import { OrdersProvider } from "@/context/order";
-import { ProductsProvider } from "@/context/product";
-import { CategoriesProvider } from "@/context/categories";
 
 export default function App({ Component, pageProps }: AppProps) {
   const [colorScheme, setColorScheme] = React.useState<ColorScheme>("light");
@@ -42,17 +38,9 @@ export default function App({ Component, pageProps }: AppProps) {
         <HydrationProvider>
           <div dir="ltr">
             <Client>
-              <CartProvider>
-                <OrdersProvider>
-                  <ProductsProvider>
-                    <CategoriesProvider>
-                      <BeanHeader links={Routes} />
-                      <Component {...pageProps} />
-                      <Notifications />
-                    </CategoriesProvider>
-                  </ProductsProvider>
-                </OrdersProvider>
-              </CartProvider>
+              <BeanHeader links={Routes} />
+              <Component {...pageProps} />
+              <Notifications />
             </Client>
             <BeanFooter links={Routes} />
           </div>
