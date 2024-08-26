@@ -1,0 +1,27 @@
+header {
+  margin: 0 !important;
+}
+
+.my-notification-class {
+  color: white !important;
+}
+
+.mantine-Notification-title {
+  color: white !important;
+}
+
+.mantine-Notification-description {
+  color: #ededed !important;
+}
+
+.footer-link {
+  text-decoration: none;
+  color: #9f9f9f;
+
+}
+
+overlay-cat::after {
+  width: 100%;
+  height: 100%;
+  background-color: black;
+}

@@ -1,0 +1,9 @@
+- all Fetch methods in Constructor to decrease firebase requests []
+- Add Search to Products []
+- Add loader to pages []
+- Add Icons to Navbar []
+- Fix initial white page []
+- Make Nav Link sync when refreshing []
+- Fetch To State []
+- Add Counter To Product Cards
+- Add Clear Cart, Payment Done and Edit Info
