@@ -18,7 +18,6 @@ import {
 import { useDisclosure } from "@mantine/hooks";
 import { MantineLogo } from "@mantine/ds";
 import { IconSun, IconMoonStars } from "@tabler/icons-react";
-import { getTotalQuantity } from "@/helpers/general";
 
 const HEADER_HEIGHT = rem(60);
 
