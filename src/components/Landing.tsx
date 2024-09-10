@@ -10,7 +10,7 @@ import Link from "next/link";
 
 const useStyles = createStyles((theme) => ({
   root: {
-    backgroundColor: theme.colors.green,
+    backgroundColor: theme.colors.purple,
     backgroundSize: "cover",
     backgroundPosition: "center",
     backgroundImage:
@@ -102,9 +102,7 @@ export function Landing() {
             </Title>
 
             <Text className={classes.description} mt={30}>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem
-              doloribus, corrupti exercitationem qui vel earum dicta veniam
-              repudiandae aliquam maxime.
+            We envision a future where every individual, equipped with our tools and insights, can turn their entrepreneurial dreams into thriving realities.
             </Text>
             <Link href={"/about"}>
               <Button
