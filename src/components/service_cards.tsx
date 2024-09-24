@@ -24,7 +24,7 @@ export const ServiceSection = () => {
           {SERVICES.map((service) => (
             <Grid.Col key={service} xs={12} sm={12} md={6} lg={4}>
               <Card shadow="sm" padding="lg" radius="md" withBorder>
-                <Group justify="space-between" mt="md" mb="xs">
+                <Group mt="md" mb="xs">
                   <Text fw={900}>🔖 {service.toUpperCase()}</Text>
                 </Group>
 
