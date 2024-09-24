@@ -79,6 +79,13 @@ const useStyles = createStyles((theme) => ({
       width: "100%",
     },
   },
+
+  outline_btn: {
+    background: "transparent",
+    color: "white",
+    border: "3px solid white",
+    marginLeft: "1rem",
+  },
 }));
 
 export function Landing() {
@@ -102,9 +109,11 @@ export function Landing() {
             </Title>
 
             <Text className={classes.description} mt={30}>
-            We envision a future where every individual, equipped with our tools and insights, can turn their entrepreneurial dreams into thriving realities.
+              We envision a future where every individual, equipped with our
+              tools and insights, can turn their entrepreneurial dreams into
+              thriving realities.
             </Text>
-            <Link href={"/about"}>
+            <Link href={"/services"}>
               <Button
                 variant="gradient"
                 gradient={{ from: "#38006c", to: "#66006c" }}
@@ -112,7 +121,18 @@ export function Landing() {
                 className={classes.control}
                 mt={40}
               >
-                Learn More
+                Our Services
+              </Button>
+            </Link>
+            <Link href={"/contact"}>
+              <Button
+                variant="gradient"
+                gradient={{ from: "#38006c", to: "#66006c" }}
+                size="xl"
+                className={classes.outline_btn}
+                mt={40}
+              >
+                Contact Us
               </Button>
             </Link>
           </div>

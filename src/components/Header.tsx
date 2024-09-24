@@ -18,6 +18,7 @@ import {
 import { useDisclosure } from "@mantine/hooks";
 import { MantineLogo } from "@mantine/ds";
 import { IconSun, IconMoonStars } from "@tabler/icons-react";
+import Link from 'next/link';
 
 const HEADER_HEIGHT = rem(60);
 
@@ -142,11 +143,13 @@ export function BeanHeader({ links }: HeaderResponsiveProps) {
   return (
     <Header height={HEADER_HEIGHT} mb={120} className={classes.root}>
       <Container className={classes.header}>
+      <Link href={"/"}>
         <Image
           src={`/logo-${colorScheme}.png`}
           style={{ width: "5rem", padding: "0.3em" }}
           alt={"Entrepreno"}
         />
+        </Link>
         <Group spacing={8} className={classes.links}>
           {items}
           <Switch

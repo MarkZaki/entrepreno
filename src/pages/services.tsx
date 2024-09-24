@@ -4,6 +4,7 @@ import Link from "next/link";
 import { Button, Title } from "@mantine/core";
 import styles from "@/styles/Main.module.css";
 import { Landing } from "@/components/Landing";
+import { ServiceSection } from "@/components/service_cards";
 
 export default function Home() {
   return (
@@ -24,6 +25,7 @@ export default function Home() {
       <main className={styles.main}>
         <div className={styles.container}>
           <Title>Our Services</Title>
+          <ServiceSection />
         </div>
       </main>
     </>

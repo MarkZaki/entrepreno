@@ -1,11 +1,19 @@
 import React from "react";
 import Head from "next/head";
 import Link from "next/link";
-import { Button, Title } from "@mantine/core";
+import { Accordion, Button, Container, Title } from "@mantine/core";
 import styles from "@/styles/Main.module.css";
 import { Landing } from "@/components/Landing";
+import { ABOUT } from "@/settings/about";
 
 export default function Home() {
+  const items = ABOUT.map((item) => (
+    <Accordion.Item key={item.value} value={item.value}>
+      <Accordion.Control icon={item.emoji}>{item.value}</Accordion.Control>
+      <Accordion.Panel>{item.description}</Accordion.Panel>
+    </Accordion.Item>
+  ));
+
   return (
     <>
       <Head>
@@ -24,6 +32,13 @@ export default function Home() {
       <main className={styles.main}>
         <div className={styles.container}>
           <Title>About Us</Title>
+          <div style={{ marginTop: "3rem", marginBottom: "2rem" }}>
+            <Container>
+              <Accordion variant="separated" radius="md" defaultValue="Apples">
+                {items}
+              </Accordion>
+            </Container>
+          </div>
         </div>
       </main>
     </>

@@ -64,12 +64,13 @@ export function BeanFooter({ links }: FooterCenteredProps) {
   return (
     <div className={classes.footer}>
       <div className={classes.inner}>
-        <Image
-          src={`/logo-${colorScheme}.png`}
-          style={{ width: "5rem" }}
-          alt={"Entrepreno"}
-        />
-
+        <Link href={"/"}>
+          <Image
+            src={`/logo-${colorScheme}.png`}
+            style={{ width: "5rem" }}
+            alt={"Entrepreno"}
+          />
+        </Link>
         <Group className={classes.links}>{items}</Group>
 
         <Group spacing="xs" position="right" noWrap>
