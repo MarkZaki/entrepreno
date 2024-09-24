@@ -124,17 +124,6 @@ export function Landing() {
                 Our Services
               </Button>
             </Link>
-            <Link href={"/contact"}>
-              <Button
-                variant="gradient"
-                gradient={{ from: "#38006c", to: "#66006c" }}
-                size="xl"
-                className={classes.outline_btn}
-                mt={40}
-              >
-                Contact Us
-              </Button>
-            </Link>
           </div>
         </div>
       </Container>
